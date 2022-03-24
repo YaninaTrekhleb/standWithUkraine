@@ -1,13 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pathway+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html, body {
+  background-color: rgb(168, 231, 240);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
 .slide-container {
   box-sizing: border-box;
   height: 100%;
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 20px;
-  background-image: url(../images/sunflowers-background.jpeg);
+  /* background-image: url(./images/sunflowers-background.jpeg); */
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: 0 0;
   transition: all 1s ease-in-out;
 }
+
+.slide-title {
+  background-color: blue;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px;
+  font-family: 'Bebas Neue', cursive;
+  color: white;
+  font-size: 50px;
+}
+
+.slide-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+/* 
+.slide-navigation-title {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  left: 0;
+  top: 0;
+} */
+
+.slide-navigation-title-text {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 25px;
+  text-align: center;
+  box-sizing: border-box;
+  color: white;
+  max-width: 500px;
+  line-height: 30px;
+}
+
+.slide-navigation-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.slide-navigation-previous-title,
+.slide-navigation-next-title,
+.slide-title {
+  transition: all .5s ease-in-out;
+}
+
+.slide-navigation-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.slide-navigation-previous-arrow {
+  margin-right: 20px;
+}
+
+.slide-navigation-next-arrow {
+  margin-left: 20px;
+}
+
+.slider-footer {
+  box-sizing: border-box;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  padding: 20px 20px 10px 20px;
+}
+
+.slider-pager-counter {
+  display: flex;
+  flex-direction: row;
+}
+
+.pager-counter-number {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 12px;
+  padding: 0 4px;
+  border: 1px dotted white;
+  margin-left: -1px;
+  cursor: pointer;
+}
+

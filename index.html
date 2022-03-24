@@ -11,9 +11,45 @@
 </head>
 <body>
   <div class="slide-container">
-    <h1>How I can help Ukraine</h1>
+    <div class="slide-title" id="slide-title">
+       How can I help Ukraine?
+    </div>
+    <div class="slide-navigation">
+      <div class="slide-navigation-left" id="slide-navigation-left">
+        <div class="slide-navigation-previous-arrow">
+          <img src="./images/previous-arrow.svg" alt="previous-arrow" width="40px"/>
+        </div>
+      </div>
+      <div class="slide-navigation-title-text">
+        <a href="" id="description-link">
+          Thank you for your compassion for Ukraine's pain. </br> 
+          On this page you will find different foundations that need financial help. </br>
+          These include the Ukrainian army, humanitarian funds, or people who are now hosting refugees.
+          Also at the end of this page you can find Instagram pages to follow the situation in real time.
+        </a> 
+      </div>
+      <div class="slide-navigation-right" id="slide-navigation-right">
+        <div class="slide-navigation-next-arrow">
+          <img src="./images/next-arrow.svg" alt="next-arrow" width="40px"/>
+        </div>
+      </div>
+    </div>
   </div>
-  
+
+  <div class="slider-footer">
+    <div class="slider-pager-counter">
+      <div class="pager-counter-number" onclick="renderSlide(0); moveBackgroundPosition(0)">1</div>
+      <div class="pager-counter-number" onclick="renderSlide(1); moveBackgroundPosition(1)">2</div>
+      <div class="pager-counter-number" onclick="renderSlide(2); moveBackgroundPosition(2)">3</div>
+      <div class="pager-counter-number" onclick="renderSlide(3); moveBackgroundPosition(3)">4</div>
+      <div class="pager-counter-number" onclick="renderSlide(4); moveBackgroundPosition(4)">5</div>
+      <div class="pager-counter-number" onclick="renderSlide(5); moveBackgroundPosition(5)">6</div>
+      <div class="pager-counter-number" onclick="renderSlide(6); moveBackgroundPosition(6)">7</div>
+      <div class="pager-counter-number" onclick="renderSlide(7); moveBackgroundPosition(7)">8</div>
+      <div class="pager-counter-number" onclick="renderSlide(8); moveBackgroundPosition(8)">9</div>
+      <div class="pager-counter-number" onclick="renderSlide(9); moveBackgroundPosition(9)">10</div>
+    </div>
+  </div>
 
   <script src="main.js"></script>
 </body>
