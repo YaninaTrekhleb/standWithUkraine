@@ -28,7 +28,7 @@ const slidersData = [
   {
     title: 'Help for the humanitarian needs through "Razom for Ukraine" Foundation',
     link: 'https://razomforukraine.org/donate/',
-    description: 'Razom is a diverse community of volunteers and collaborators across the US and Ukraine. They support the people of Ukraine in their continued quest for democracy and progress. In response to war conflict, they raise funds to provide medical supplies and other humanitarian aid.',
+    description: 'Razom is a diverse community of volunteers and collaborators across the US and Ukraine. In response to war conflict, they raise funds to provide medical supplies and other humanitarian aid.',
     backgroundImagePosition: 4 * stepSize,
   },
   {

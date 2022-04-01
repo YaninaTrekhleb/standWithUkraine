@@ -135,7 +135,8 @@ html, body {
   }
 
   .slide-navigation-title-text {
-    font-size: 22px;
+    font-size: 18px;
+    padding: 8px;
   }
 
   .slider-footer {
