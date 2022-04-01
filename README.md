@@ -11,6 +11,7 @@ This site is a collection of foundations and individuals to whom you can financi
 🌻 In the background image are the colors of Ukraine's flag - is a field of sunflowers and the peaceful blue sky, which it will certainly become after Ukraine's victory over the occupiers.
 
 The yellow color of the sunflower is a symbol of faith in the best, respect, and joy. 
+
 Ukraine will definitely win! 🇺🇦 
 
 ![Demo](src/images/../../images/readme-file-img.png)
