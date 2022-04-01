@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 html, body {
-  background-color: rgb(168, 231, 240);
+  /* background-color: rgb(168, 231, 240); */
   margin: 0;
   padding: 0;
   height: 100vh;
@@ -17,7 +17,7 @@ html, body {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  /* background-image: url(./images/sunflowers-background.jpeg); */
+  background-image: url(./images/sunflower-background.jpeg);
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: 0 0;
@@ -25,7 +25,8 @@ html, body {
 }
 
 .slide-title {
-  background-color: blue;
+  max-width: 650px;
+  text-align: center;
   box-sizing: border-box;
   position: absolute;
   top: 0;
@@ -36,6 +37,7 @@ html, body {
   font-family: 'Bebas Neue', cursive;
   color: white;
   font-size: 50px;
+  text-shadow: 2px 2px rgba(119, 119, 119, 0.8);
 }
 
 .slide-navigation {
@@ -44,27 +46,26 @@ html, body {
   justify-content: space-between;
   width: 100%;
 }
-/* 
-.slide-navigation-title {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  left: 0;
-  top: 0;
-} */
 
 .slide-navigation-title-text {
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  color: rgb(71, 71, 71);
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 25px;
   text-align: center;
   box-sizing: border-box;
-  color: white;
   max-width: 500px;
   line-height: 30px;
+  border-radius: 5px;
+  padding: 15px;
+  transition: all 1s ease-in-out;
+  text-decoration: underline;
+}
+
+.slide-navigation-title-text a {
+  text-decoration: none;
+  color: rgb(49, 49, 49);
 }
 
 .slide-navigation-left {
@@ -122,5 +123,36 @@ html, body {
   border: 1px dotted white;
   margin-left: -1px;
   cursor: pointer;
+  backdrop-filter: blur(8px);
 }
 
+
+/* Mobile design */
+@media screen and (max-width: 500px) {
+  .slide-title {
+    font-size: 32px;
+    max-width: 250px;
+  }
+
+  .slide-navigation-title-text {
+    font-size: 22px;
+  }
+
+  .slider-footer {
+    justify-content: center;
+  }
+
+  .pager-counter-number {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .slide-title {
+    font-size: 28px;
+  }
+
+  .slide-navigation-title-text {
+    font-size: 15px;
+  }
+}
