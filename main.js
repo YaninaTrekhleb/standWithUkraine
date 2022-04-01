@@ -85,8 +85,14 @@ const backgroundImagePositionElement = $('#slide-container');
 function renderSlide(slideNumber) {
   slideTitleElement.html(slidersData[slideNumber].title);
   slideDescriptionLinkElement.html(slidersData[slideNumber].description);
-  slideDescriptionLinkElement.attr('href', slidersData[slideNumber].link)
+  slideDescriptionLinkElement.attr('href', slidersData[slideNumber].link);
   descriptionElement.html(slidersData[slideNumber].description);
+
+  if (slideNumber === 0) {
+    slideDescriptionLinkElement.css('text-decoration', 'none');
+  } else {
+    slideDescriptionLinkElement.css('text-decoration', 'underline');
+  }
 
   if (slideNumber === 0) {
     sliderPreviousButtonElement.css('visibility', 'hidden');
