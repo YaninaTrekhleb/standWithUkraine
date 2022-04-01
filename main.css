@@ -149,10 +149,10 @@ html, body {
 
 @media screen and (max-width: 350px) {
   .slide-title {
-    font-size: 28px;
+    font-size: 22px;
   }
 
-  .slide-navigation-title-text {
-    font-size: 15px;
+  .slide-navigation-title-text{
+    font-size: 14px;
   }
 }
